@@ -5,8 +5,8 @@
  include __DIR__ . '/Models/Category.php';
  $cat = new Category('Action');
  $movies = [
-    new Movie('Star Wars', 'en', $fantascienza, "https://images.everyeye.it/img-notizie/ecco-linguaggi-programmazione-prova-futuro-v7-531835.jpg", 10,  5, $cat), ),
-    new Movie('Harry potter', 'en', $fantascienza, "https://images.everyeye.it/img-notizie/ecco-linguaggi-programmazione-prova-futuro-v7-531835.jpg", 10,  5, $cat) )
+    new Movie('Star Wars', 'en', $fantascienza, "https://images.everyeye.it/img-notizie/ecco-linguaggi-programmazione-prova-futuro-v7-531835.jpg", 10,  5, $cat),
+    new Movie('Harry potter', 'en', $fantascienza, "https://images.everyeye.it/img-notizie/ecco-linguaggi-programmazione-prova-futuro-v7-531835.jpg", 10,  5, $cat) 
  ];
  $books = [
     new Book('dune', 400, $fantascienza, 'https://images.everyeye.it/img-notizie/ecco-linguaggi-programmazione-prova-futuro-v7-531835.jpg', 10, 5, $cat),
