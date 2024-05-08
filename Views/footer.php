@@ -1,3 +1,7 @@
 <footer>
-    <p class="test-center">Copyright &copy; 2024</p>
+    <p class="text-center">Copyright &copy; 2024</p>
 </footer>
+
+</body>
+
+</html>

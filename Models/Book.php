@@ -1,11 +1,26 @@
-<?php 
+<?php
 include_once __DIR__ . '/Product.php';
-class Movie extends Product {
-    public $numPages;
-    public function __construct($title, $numPages, $category, $cover, $price, $rating){
 
-        $this->numPages = $numPages;
-        parent::__construct($title, $cover, $price, $rating, $category);
+class Book extends Product
+{
+    private $numPages;
+    public function __construct($id, $title, $numPages, $price, $rating, $cover, $category)
+    {
+        parent::__construct($id, $title, $price, $rating, $cover, $category);
+        $this->numPges = $numPages;
+
+
     }
- 
+    public function formatItem()
+    {
+        $item = [
+            'image' => $this->cover,
+            'title' => $this->title,
+            'custom' => $this->numPages,
+            'category' => $this->category->name,
+            'vote' => $this->getVote()
+        ];
+        return $item;
+    }
+
 }
